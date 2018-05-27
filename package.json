@@ -1,0 +1,57 @@
+{
+  "name": "@fullhuman/postcss-purgecss",
+  "version": "1.0.0",
+  "description": "PostCSS plugin for PurgeCSS",
+  "main": "./lib/postcss-purgecss.js",
+  "module": "./lib/postcss-purgecss.es.js",
+  "jsnext:main": "./lib/postcss-purgecss.es.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__",
+    "example": "examples"
+  },
+  "keywords": [
+    "postcss",
+    "postcss-plugin",
+    "remove",
+    "unused",
+    "css",
+    "purgecss"
+  ],
+  "author": "FoundrySH <no-reply@foundry.sh>",
+  "license": "MIT",
+  "repository": "FoundrySH/postcss-purgecss",
+  "bugs": {
+    "url": "https://github.com/FoundrySH/postcss-purgecss/issues"
+  },
+  "homepage": "https://github.com/FoundrySH/postcss-purgecss",
+  "dependencies": {
+    "purgecss": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "codacy-coverage": "^3.0.0",
+    "eslint": "^4.19.1",
+    "eslint-plugin-flowtype": "^2.47.1",
+    "flow-bin": "^0.73.0",
+    "jest": "^23.0.0",
+    "prettier": "^1.12.1",
+    "rollup": "^0.59.3",
+    "rollup-plugin-babel": "^3.0.4",
+    "rollup-plugin-flow": "^1.1.1",
+    "rollup-plugin-node-builtins": "^2.1.2",
+    "rollup-plugin-node-resolve": "^3.3.0"
+  },
+  "scripts": {
+    "test": "npx jest __tests__/.+.test.js",
+    "dev": "rollup -c rollup.config.js -w",
+    "build": "rollup -c rollup.config.js",
+    "lint": "npx eslint -c .eslintrc src/",
+    "flow": "npx flow",
+    "prettier": "npx prettier --write --write --tab-width 4 --no-semi --single-quote '{src,__{tests,mocks}__}/**/*.js'"
+  }
+}
