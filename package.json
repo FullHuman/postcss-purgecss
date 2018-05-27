@@ -1,6 +1,6 @@
 {
   "name": "@fullhuman/postcss-purgecss",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "PostCSS plugin for PurgeCSS",
   "main": "./lib/postcss-purgecss.js",
   "module": "./lib/postcss-purgecss.es.js",
