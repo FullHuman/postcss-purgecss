@@ -3,10 +3,10 @@
 [![CircleCi](https://circleci.com/gh/FullHuman/postcss-purgecss/tree/master.svg?style=shield)]()
 [![dependencies Status](https://david-dm.org/fullhuman/postcss-purgecss/status.svg)](https://david-dm.org/fullhuman/postcss-purgecss)
 [![devDependencies Status](https://david-dm.org/fullhuman/postcss-purgecss/dev-status.svg)](https://david-dm.org/fullhuman/postcss-purgecss?type=dev)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d33de778a87140cfbaff6478ad134042)](https://www.codacy.com/app/FullHuman/postcss-purgecss?utm_source=github.com&utm_medium=referral&utm_content=FullHuman/postcss-purgecss&utm_campaign=Badge_Grade)
-[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/d33de778a87140cfbaff6478ad134042)](https://www.codacy.com/app/FullHuman/postcss-purgecss?utm_source=github.com&utm_medium=referral&utm_content=FullHuman/postcss-purgecss&utm_campaign=Badge_Coverage)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2554f9858cb742ed93eb22f49ccec3c3)](https://www.codacy.com/app/FullHuman/postcss-purgecss?utm_source=github.com&utm_medium=referral&utm_content=FullHuman/postcss-purgecss&utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Coverage/2554f9858cb742ed93eb22f49ccec3c3)](https://www.codacy.com/app/FullHuman/postcss-purgecss?utm_source=github.com&utm_medium=referral&utm_content=FullHuman/postcss-purgecss&utm_campaign=Badge_Coverage)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
-[![npm](https://img.shields.io/npm/v/postcss-purgecss.svg)](https://www.npmjs.com/package/postcss-purgecss)
+[![npm](https://img.shields.io/npm/v/postcss-purgecss.svg)](https://www.npmjs.com/package/@fullhuman/postcss-purgecss)
 [![license](https://img.shields.io/github/license/fullhuman/postcss-purgecss.svg)]()
 
 [PostCSS] plugin for PurgeCSS.
