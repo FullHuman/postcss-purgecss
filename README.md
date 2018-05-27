@@ -13,10 +13,16 @@
 
 [PostCSS]: https://github.com/postcss/postcss
 
+## Installation
+
+```
+npm i -D @fullhuman/postcss-purgecss
+```
+
 ## Usage
 
 ```js
-const purgecss = require('postcss-purgecss')
+const purgecss = require('@fullhuman/postcss-purgecss')
 postcss([
   purgecss({
     content: ['./src/**/*.html']

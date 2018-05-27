@@ -1,6 +1,6 @@
 {
   "name": "@fullhuman/postcss-purgecss",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PostCSS plugin for PurgeCSS",
   "main": "./lib/postcss-purgecss.js",
   "module": "./lib/postcss-purgecss.es.js",
@@ -20,11 +20,11 @@
   ],
   "author": "FoundrySH <no-reply@foundry.sh>",
   "license": "MIT",
-  "repository": "FoundrySH/postcss-purgecss",
+  "repository": "FullHuman/postcss-purgecss",
   "bugs": {
-    "url": "https://github.com/FoundrySH/postcss-purgecss/issues"
+    "url": "https://github.com/FullHuman/postcss-purgecss/issues"
   },
-  "homepage": "https://github.com/FoundrySH/postcss-purgecss",
+  "homepage": "https://github.com/FullHuman/postcss-purgecss",
   "dependencies": {
     "purgecss": "^1.0.0"
   },
