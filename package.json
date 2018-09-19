@@ -1,6 +1,6 @@
 {
   "name": "@fullhuman/postcss-purgecss",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "PostCSS plugin for PurgeCSS",
   "main": "./lib/postcss-purgecss.js",
   "module": "./lib/postcss-purgecss.es.js",
@@ -29,22 +29,24 @@
     "purgecss": "^1.0.0"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.3",
-    "babel-plugin-external-helpers": "^6.22.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-flow": "^6.23.0",
+    "@babel/core": "^7.1.0",
+    "@babel/plugin-external-helpers": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-flow": "^7.0.0",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^9.0.0",
     "codacy-coverage": "^3.0.0",
-    "eslint": "^5.2.0",
+    "eslint": "^5.6.0",
     "eslint-plugin-flowtype": "^2.50.0",
-    "flow-bin": "^0.77.0",
-    "jest": "^23.4.2",
+    "flow-bin": "^0.81.0",
+    "jest": "^23.6.0",
     "prettier": "^1.14.0",
-    "rollup": "^0.63.0",
-    "rollup-plugin-babel": "^3.0.4",
+    "rollup": "^0.66.0",
+    "rollup-plugin-babel": "^4.0.1",
     "rollup-plugin-flow": "^1.1.1",
     "rollup-plugin-node-builtins": "^2.1.2",
-    "rollup-plugin-node-resolve": "^3.3.0"
+    "rollup-plugin-node-resolve": "^3.4.0"
   },
   "scripts": {
     "test": "npx jest __tests__/.+.test.js",
