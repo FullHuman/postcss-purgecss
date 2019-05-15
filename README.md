@@ -58,6 +58,14 @@ Type: `Array<RegExp>`
 
 You can whitelist selectors based on a regular expression with whitelistPatterns.
 
+### `rejected`
+Type: `boolean`
+Default value: `false`
+
+If true, purged selectors will be captured and rendered as PostCSS messages.
+Use with a PostCSS reporter plugin like [`postcss-reporter`](https://github.com/postcss/postcss-reporter)
+to print the purged selectors to the console as they are processed.
+
 ### `keyframes`
 Type: `boolean`
 Default value: `false`
