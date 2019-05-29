@@ -28,6 +28,32 @@ describe('Purgecss postcss plugin', () => {
         })
     }
 
+    for (const file of files) {
+        it(`queues messages when using reject flag: ${file}`, done => {
+            const input = fs
+                .readFileSync(`${__dirname}/fixtures/src/${file}/${file}.css`)
+                .toString()
+            const expected = fs
+                .readFileSync(`${__dirname}/fixtures/expected/${file}.css`)
+                .toString()
+            postcss([
+                purgecss({
+                    content: [`${__dirname}/fixtures/src/${file}/${file}.html`],
+                    rejected: true
+                })
+            ])
+                .process(input)
+                .then(result => {
+                    expect(result.css).toBe(expected)
+                    expect(result.warnings().length).toBe(0)
+                    expect(result.messages.length).toBeGreaterThan(0)
+                    expect(result.messages[0].text).toMatch(/unused-class/)
+                    expect(result.messages[0].text).toMatch(/another-one-not-found/)
+                    done()
+                })
+        })
+    }
+
     it('remove unused css with config file', done => {
         const input = fs
             .readFileSync(`${__dirname}/fixtures/src/simple/simple.css`)

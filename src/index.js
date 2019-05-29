@@ -21,7 +21,7 @@ const loadConfigFile = configFile => {
 }
 
 export default postcss.plugin('postcss-plugin-purgecss', function(opts) {
-    return function(root) {
+    return function(root, result) {
         if (typeof opts === 'string' || typeof opts === 'undefined')
             opts = loadConfigFile(opts)
 
@@ -62,5 +62,15 @@ export default postcss.plugin('postcss-plugin-purgecss', function(opts) {
 
         // purge font face
         if (purgecss.options.fontFace) purgecss.removeUnusedFontFaces()
+
+        if (purgecss.options.rejected && purgecss.selectorsRemoved.size > 0) {
+            result.messages.push({
+                type: 'purgecss',
+                plugin: 'postcss-purgecss',
+                text: `purging ${purgecss.selectorsRemoved.size} selectors:
+  ${Array.from(purgecss.selectorsRemoved).map(selector => selector.trim()).join('\n  ')}`,
+            })
+            purgecss.selectorsRemoved.clear()
+        }
     }
 })
