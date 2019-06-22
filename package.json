@@ -37,7 +37,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-eslint": "^10.0.0",
     "codacy-coverage": "^3.4.0",
-    "eslint": "^5.16.0",
+    "eslint": "^6.0.0",
     "eslint-plugin-flowtype": "^3.6.1",
     "flow-bin": "^0.98.0",
     "jest": "^24.7.0",
