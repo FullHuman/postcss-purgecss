@@ -1,6 +1,10 @@
 # Change Log
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+# v1.3.0 - 2019-09-13
+
+* Update dependencies, including PurgeCSS 1.4
+
 # v1.2.0 - 2019-04-21
 
 * Update dependencies, including PurgeCSS 1.3
