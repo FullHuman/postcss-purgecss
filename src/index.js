@@ -33,7 +33,11 @@ export default postcss.plugin('postcss-plugin-purgecss', function(opts) {
         purgecss.root = root
 
         // Get selectors from content files
-        const { content, extractors } = purgecss.options
+        let { content, extractors } = purgecss.options
+
+        if (typeof content === 'function') {
+            content = content(root.source.input.file)
+        }
 
         const fileFormatContents = ((content.filter(
             o => typeof o === 'string'
