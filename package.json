@@ -39,7 +39,7 @@
     "codacy-coverage": "^3.4.0",
     "eslint": "^6.3.0",
     "eslint-plugin-flowtype": "^4.3.0",
-    "flow-bin": "^0.108.0",
+    "flow-bin": "^0.110.0",
     "jest": "^24.9.0",
     "prettier": "^1.18.0",
     "rollup": "^1.21.2",
