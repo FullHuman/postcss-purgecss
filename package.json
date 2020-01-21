@@ -27,7 +27,7 @@
   "homepage": "https://github.com/FullHuman/postcss-purgecss",
   "dependencies": {
     "postcss": "^7.0.14",
-    "purgecss": "^1.4.0"
+    "purgecss": "^2.0.5"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
